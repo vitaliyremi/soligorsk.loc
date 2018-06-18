@@ -1,0 +1,252 @@
+/* чистка reset.CSS
+================================================ */
+*
+{
+	padding:0; margin:0;
+}
+img
+{
+	border:0;
+}
+
+a {
+	color: #69C;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #F60;
+}
+
+h1 {
+	font: 1.7em;
+	line-height: 110%;
+	color: #000;
+}
+
+p {
+	margin: 0 0 20px;
+}
+/* Сброс стилей для поля ввода в браузерах webkit */
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; /* Удаляем иконку поиска и сброса */
+}
+.unsichtbar{
+		position: relative;
+	}
+ 
+/*.sichtbar{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 1000;
+	}
+/* тело сайта
+================================================ */
+body
+{
+	background:#ccc;
+}
+
+/* шапка
+================================================ */
+header
+{
+	background:#fff;
+	overflow: hidden;
+}
+
+header img
+{
+	margin: 0 auto;
+	display: block;
+	width:100%;
+
+}
+
+header ul
+{
+	margin-left: 10px;
+}
+header ul li
+{
+	float: left;
+	padding: 9px 5px;
+	list-style: none;
+}
+header ul li a
+{
+	color:#4c4c4c;
+	text-decoration:none;
+	font-size:20px;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.header-info
+{
+	background:url(../images/header-info.jpg);
+	height: 250px
+	
+}
+.header-info h1 
+{
+	color: #038fb2; 
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:50px;
+}
+
+
+/* Поле ввода строки поиска */
+input[type=search] {
+	background: #ededed url(../images/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: #6dcff6;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+/* Заполнитель */
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/* Демо B */
+#demo-b input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+	float:right;
+	margin: 5px 10px 5px 0px;
+}
+#demo-b input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-b input[type=search]:focus {
+	width: 93%;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-b input:-moz-placeholder {
+	color: transparent;
+}
+#demo-b input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+/* иконки транспорта
+================================================ */
+a.itransport,
+.itransport a {
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -900em;
+	color: #fff;
+	text-decoration: none;
+	line-height: 100%;
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 0 2px 5px 0;
+	background-color: #B81F4B;
+	border: solid 1px #B81F4B;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+/* for IE */
+*:first-child+html a.itransport,
+*:first-child+html .itransport a {
+	text-indent: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+/* itransport LIST
+================================================ */
+.itransport {
+	margin: 0;
+	padding: 0;
+}
+.itransport li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+/* COLORS
+================================================ */
+/* default hover */
+a.itransport:hover:after,
+.itransport a:hover:after {
+	background-image: none;
+}
+a.itransport:hover,
+.itransport a:hover,
+a.itransport:hover:after,
+.itransport a:hover:after {
+	background-color: #0b99bc;
+}
+
+/* icon with text style */
+a.itransport.text,
+.itransport.text a {
+	    text-indent: 30px;
+    width: auto;
+    height: 39px;
+    padding: 9px 14px 3px 34px;
+    background-position: 0px center;
+    font-size: 35px;
+    font-weight: bold;
+}
+*:first-child+html a.itransport.text,
+*:first-child+html .itransport.text a {
+	text-indent: inherit; /* for IE */
+	line-height: 100%;
+	font-size: 100%;
+}
+
+/* ICONS
+================================================ */
+a.itransport.number,
+.itransport a.number {
+	background-image: url(../images/icobus.jpg);
+}
+
